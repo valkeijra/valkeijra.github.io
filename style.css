@@ -1,0 +1,13 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.EntryContainer {
+    border: 5px dotted purple;
+    background-color: mediumpurple;
+}
