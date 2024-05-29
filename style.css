@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: grey;
 }
 
 .MainContainer {
@@ -21,15 +22,18 @@ body {
     height: 100%;
     border: 5px solid purple;
     border-radius: 25px;
-    background-color: mediumpurple;
+    background-color: dimgrey;
 }
 
 .EntryContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 5px solid purple;
-    background-color: mediumpurple;
 }
 
+.Entry {
+    border-top: 5px solid black;
+    padding: 10px;
+    width: 75%;
+}
