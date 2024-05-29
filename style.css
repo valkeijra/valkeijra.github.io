@@ -13,13 +13,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 60%;
     border: 5px solid purple;
+    border-radius: 25px;
     background-color: mediumpurple;
 }
 
 .EntryContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border: 5px solid purple;
