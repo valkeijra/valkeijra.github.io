@@ -19,8 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 75%;
-    height: 100%;
-    border: 5px solid purple;
+    border: 5px solid black;
     border-radius: 25px;
     background-color: dimgrey;
 }
@@ -30,10 +29,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .Entry {
     border-top: 5px solid black;
     padding: 10px;
-    width: 75%;
+    width: 100%;
 }
