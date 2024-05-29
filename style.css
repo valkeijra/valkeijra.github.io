@@ -8,6 +8,15 @@
 body {
 }
 
+.MainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid purple;
+    background-color: mediumpurple;
+}
+
 .EntryContainer {
     display: flex;
     flex-direction: row;
@@ -16,3 +25,4 @@ body {
     border: 5px solid purple;
     background-color: mediumpurple;
 }
+
