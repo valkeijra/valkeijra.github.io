@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>Portfolio - Alma Pettersson</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
-
 <body>
     <div class="MainContainer">
         <div class="Introduction">
@@ -14,79 +14,47 @@
         </div>
 
         <div class="EntryContainer">
+            <!-- PERSONAL PROJECTS -->
+            <h2 class="EntryContainerTitle"> Personal Projects</h2>
+
+            <!-- PAX ROMANA -->
             <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
-            </div>
-            <div class="Entry">
-                <h2 class="EntryHeader"> Title of Project</h2>
-                <p class="EntryTime"> Start time - End Time</p>
-                <p class="EntryDescription">
-                </p>
+                <h2 class="EntryHeader"> Pax Romana </h2>
+                <p class="EntryTime"> November 2023 - Ongoing</p>
+                <div class="EntryBody">
+                    <div class="EntryVisual">
+                        <div class="SlideContainer">
+                            <div class="Slide Fade"> <img alt="Title" src="Images/PaxRomanaTitle.png" width="100%" height="100%" /> </div>
+                            <div class="Slide Fade"> <img alt="ScreenShot" src="Images/PaxRomanaSS.png" width="100%" height="100%" /> </div>
+                            <div class="SlideButtons">
+                                <a class="PrevButton" onclick="changeSlide(-1)"><</a>
+                                <a class="NextButton" onclick="changeSlide(1)">></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EntryDescription">
+                        <p>
+                            Pax Romana is an ongoing personal project that im developing together with friends from Högskolan i Skövde.
+                            The game is a paradox inspired grand strategy game with a heavy focus on economy excluding combat and warfare that is usually present in these types of games.
+                        </p>
+                        <br />
+                        <p>
+                            During this project Ive been responsible for alot of the programming work specificly the underlying systems.
+                            I''ve worked together with the other programmer in our group to design and implement different systems like buildings, trade ect. that the player can then interact with.
+                        </p>
+                        <br />
+                        <p>
+                            Since this project might be something we would wanna realese in the future it is not open source.
+                            I have however compiled detailed descriptions and smaller samples of code into a presentation that is linked below.
+                        </p>
+                    </div>
+                </div>
+                <div class="EntryLinks">
+                    <a href="">Link to Detailed Power Point</a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="Scripts/SlideShow.js"></script>
 </body>
 </html>

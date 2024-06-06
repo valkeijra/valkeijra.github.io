@@ -1,4 +1,5 @@
-﻿* {
+﻿/* General */
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -10,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: grey;
+    background-color: cadetblue;
 }
 
 .Introduction{
@@ -23,12 +24,12 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 75%;
-    border: 5px solid black;
     border-radius: 25px;
-    background-color: dimgrey;
+    background: rgb(0,0,0,0.5);
     padding: 15px;
 }
 
+/* Entry */
 .EntryContainer {
     display: flex;
     flex-direction: column;
@@ -37,8 +38,89 @@ body {
     width: 100%;
 }
 
+.EntryContainerTitle{
+    padding: 10px;
+}
+
 .Entry {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     border-top: 5px double black;
     padding: 25px;
     width: 85%;
+}
+
+.EntryBody {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    padding-top: 20px;
+}
+
+.EntryVisual{
+    width: 65%;
+    /*border: 1px solid red;*/
+    padding: 5px;
+}
+
+.EntryDescription {
+    width: 35%;
+    /*border: 1px solid green;*/
+    padding: 15px;
+}
+
+.EntryLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    /*border: 1px solid orange;*/
+    padding: 15px;
+}
+
+/* SlideShow */
+
+.SlideContainer{
+
+}
+
+.SlideButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Next & previous buttons */
+.PrevButton, .NextButton {
+    cursor: pointer;
+    width: auto;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.NextButton{
+    border-radius: 3px 0 0 3px;
+}
+
+/* Animations */
+/* Fading animation */
+.Fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
