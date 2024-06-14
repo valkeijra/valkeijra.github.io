@@ -1,40 +1,50 @@
 // JavaScript source code
 
-let slideIndex = 0;
 
-showSlides(0);
+let amountOfSlideShows = document.getElementsByClassName("SlideContainer").length;
+let slideIndex = new Map();
+
+let i;
+//Initiate all slideshows
+for (i = 0; i < amountOfSlideShows; i++)
+{
+    slideIndex.set(i, 0);
+    showSlides(i);
+}
+
+
 
 //Used by the previous and next buttons
-function changeSlide(n)
+function changeSlide(slideShowIndex, slideChange)
 {
-    slideIndex += n;
-    showSlides();
+    let newSlideIndex = slideIndex.get(slideShowIndex) + slideChange;
+    slideIndex.set(slideShowIndex, newSlideIndex);
+    showSlides(slideShowIndex);
 }
 
 
-function jumpToSlide(n)
+function jumpToSlide(slideShowIndex, targetSlide)
 {
-    slideIndex = n;
-    showSlides();
+    slideIndex.set(slideShowIndex, targetSlide);
+    showSlides(slideShowIndex);
 }
 
-function showSlides()
+function showSlides(slideShowIndex)
 {
     //Vars
-    let i;
-    let slides = document.getElementsByClassName("Slide");
+    let slides = document.getElementsByClassName("Slide" + slideShowIndex.toString());
+    let j;
 
     //Clamp slideIndex within the slides length
-    if (slideIndex >= slides.length) slideIndex = 0;
-    if (slideIndex < 0) slideIndex = (slides.length - 1);
+    if (slideIndex.get(slideShowIndex) >= slides.length) slideIndex.set(slideShowIndex, 0);
+    if (slideIndex.get(slideShowIndex) < 0) slideIndex.set(slideShowIndex, (slides.length - 1));
 
     //Disable all slides
-    for (i = 0; i < slides.length; i++)
+    for (j = 0; j < slides.length; j++)
     {
-        slides[i].style.display = "none";
+        slides[j].style.display = "none";
     }
 
-
     //Enable the current slide
-    slides[slideIndex].style.display = "block";
+    slides[slideIndex.get(slideShowIndex)].style.display = "block";
 }

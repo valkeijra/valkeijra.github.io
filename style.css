@@ -16,6 +16,7 @@ body {
 
 .Introduction{
     padding: 25px;
+    text-align: center;
 }
 
 .MainContainer {
@@ -78,6 +79,10 @@ body {
     justify-content: left;
     /*border: 1px solid orange;*/
     padding: 15px;
+}
+
+.EntryDetails {
+    padding: 5px;
 }
 
 /* SlideShow */

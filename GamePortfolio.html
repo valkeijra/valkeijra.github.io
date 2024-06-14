@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Portfolio - Alma Pettersson</title>
+    <title>Alma Pettersson - Game Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     
 </head>
@@ -10,11 +10,12 @@
     <div class="MainContainer">
         <div class="Introduction">
             <h1>Alma Pettersson - Game Portfolio</h1>
-            <p>My name is Alma Pettersson and im a recently graduated programming student.</p>
+            <p>My name is Alma Pettersson and I'm a recently graduated programming student.</p>
         </div>
 
+        <!-- PERSONAL PROJECTS -->
         <div class="EntryContainer">
-            <!-- PERSONAL PROJECTS -->
+
             <h2 class="EntryContainerTitle"> Personal Projects</h2>
 
             <!-- PAX ROMANA -->
@@ -24,14 +25,14 @@
                 <div class="EntryBody">
                     <div class="EntryVisual">
                         <div class="SlideContainer">
-                            <div class="Slide Fade"> <img alt="Title" src="Images/PaxRomanaTitle.png" width="100%" height="100%" /> </div>
-                            <div class="Slide Fade"> <img alt="ScreenShot" src="Images/PaxRomanaSS.png" width="100%" height="100%" /> </div>
+                            <div class="Slide0 Fade"> <img alt="Title" src="Images/PaxRomanaTitle.png" width="100%" height="100%" /> </div>
+                            <div class="Slide0 Fade"> <img alt="ScreenShot" src="Images/PaxRomanaSS.png" width="100%" height="100%" /> </div>
                             <div class="SlideButtons">
-                                <a class="PrevButton" onclick="changeSlide(-1)"><</a>
-                                <a class="NextButton" onclick="changeSlide(1)">></a>
+                                <a class="PrevButton" onclick="changeSlide(0, -1)"><</a>
+                                <a class="NextButton" onclick="changeSlide(0, 1)">></a>
                             </div>
                         </div>
-                    </div>
+                    </div>s
                     <div class="EntryDescription">
                         <p>
                             Pax Romana is an ongoing personal project that im developing together with friends from Högskolan i Skövde.
@@ -40,7 +41,7 @@
                         <br />
                         <p>
                             During this project Ive been responsible for alot of the programming work specificly the underlying systems.
-                            I''ve worked together with the other programmer in our group to design and implement different systems like buildings, trade ect. that the player can then interact with.
+                            I've worked together with the other programmer in our group to design and implement different systems like buildings, trade ect. that the player can then interact with.
                         </p>
                         <br />
                         <p>
@@ -49,10 +50,15 @@
                         </p>
                     </div>
                 </div>
+                <div class="EntryDetails">
+                    <p> Developed with: Unity 2022.3.15f1 </p>
+                    <p> Code langues: C#, ShaderLab </p>
+                </div>
                 <div class="EntryLinks">
                     <a href="">Link to Detailed Power Point</a>
                 </div>
             </div>
+
         </div>
     </div>
     <script src="Scripts/SlideShow.js"></script>
