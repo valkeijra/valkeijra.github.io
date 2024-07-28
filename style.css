@@ -47,6 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-between;
     border-top: 5px double black;
     padding: 25px;
     width: 85%;
@@ -77,24 +78,34 @@ body {
     flex-direction: row;
     align-items: start;
     justify-content: left;
-    /*border: 1px solid orange;*/
+    border: 5px ridge black;
     padding: 15px;
+    margin-top: 15px;
 }
 
 .EntryDetails {
     padding: 5px;
+    margin-top: 15px;
+    border-top: 1px double black;
 }
 
 /* SlideShow */
 
-.SlideContainer{
+.SlideContainer {
+    
+}
 
+.SlideImage {
+    border: 5px ridge black;
+    width: 100%;
+    height: 400px;
 }
 
 .SlideButtons{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 10px;
 }
 
 /* Next & previous buttons */
