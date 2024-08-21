@@ -4,6 +4,11 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Calibri;
+    color: antiquewhite;
+}
+
+h1, h2 {
+    color: white;
 }
 
 body {
@@ -11,10 +16,10 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: cadetblue;
+    background-color: dimgrey;
 }
 
-.Introduction{
+.Introduction {
     padding: 25px;
     text-align: center;
 }
@@ -25,7 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 75%;
-    border-radius: 25px;
+    background-color: black;
     background: rgb(0,0,0,0.5);
     padding: 15px;
 }
@@ -39,7 +44,7 @@ body {
     width: 100%;
 }
 
-.EntryContainerTitle{
+.EntryContainerTitle {
     padding: 10px;
 }
 
@@ -61,7 +66,7 @@ body {
     padding-top: 20px;
 }
 
-.EntryVisual{
+.EntryVisual {
     width: 65%;
     /*border: 1px solid red;*/
     padding: 5px;
@@ -78,26 +83,26 @@ body {
     flex-direction: row;
     align-items: start;
     justify-content: left;
-    border: 5px ridge black;
+    border: 5px double black;
     padding: 15px;
     margin-top: 15px;
 }
 
 .EntryDetails {
     padding: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
     border-top: 1px double black;
 }
 
 /* SlideShow */
 
 .SlideImage {
-    border: 5px ridge black;
+    border: 5px ridge dimgrey;
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
-.SlideButtons{
+.SlideButtons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -116,7 +121,7 @@ body {
     user-select: none;
 }
 
-.NextButton{
+.NextButton {
     border-radius: 3px 0 0 3px;
 }
 
