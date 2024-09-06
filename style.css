@@ -21,11 +21,12 @@ a {
 
 body {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: dimgrey;
+    background-image: url("Images/background.png");
+    background-repeat: repeat;
 }
 
 .Introduction {
