@@ -4,16 +4,17 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Calibri;
-    color: antiquewhite;
+   
 }
 
-h1, h2 {
-    color: white;
+.Header {
     margin: 10px;
+    color: white;
 }
 
 p {
     padding: 5px;
+    color: antiquewhite;
 }
 a {
     color: darkorange;
@@ -59,6 +60,13 @@ body {
     margin: 5px;
 }
 
+.Portrait {
+    width: 45%;
+    height: 45%;
+    margin: 10px;
+    border: 5px ridge dimgrey;
+}
+
 /* Entry */
 .EntryContainer {
     display: flex;
@@ -70,6 +78,7 @@ body {
 
 .EntryContainerTitle {
     padding: 10px;
+    color: white;
 }
 
 .Entry {
