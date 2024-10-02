@@ -81,6 +81,10 @@ body {
     color: white;
 }
 
+.EntryTime {
+    margin-left: 5px;
+}
+
 .Entry {
     display: flex;
     flex-direction: column;
@@ -115,6 +119,15 @@ body {
     padding: 5px;
     margin-top: 10px;
     border-top: 1px double black;
+}
+.EntryLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+.EntryLink {
+    margin-right: 15px;
 }
 
 /* SlideShow */
