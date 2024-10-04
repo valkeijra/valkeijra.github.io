@@ -118,7 +118,6 @@ body {
 .EntryDetails {
     padding: 5px;
     margin-top: 10px;
-    border-top: 1px double black;
 }
 .EntryLinks {
     display: flex;
