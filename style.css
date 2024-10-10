@@ -105,8 +105,8 @@ body {
 
 .EntryVisual {
     width: 65%;
-    /*border: 1px solid red;*/
     padding: 5px;
+    margin: auto;
 }
 
 .EntryDescription {
@@ -130,11 +130,16 @@ body {
 }
 
 /* SlideShow */
+.SlideContainer {
+    width: 100%;
+    text-align: center;
+}
 
 .SlideImage {
     border: 5px ridge dimgrey;
-    width: 100%;
+    width: 725px;
     height: 450px;
+    text-align: center;
 }
 
 .SlideButtons {
